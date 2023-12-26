@@ -1,0 +1,43 @@
+.encabezado {
+	grid-area: header;
+	background: nth($colores, 1 );
+
+    img{
+        @include size(100%,100%);
+        aspect-ratio: 1 / 1;    
+        position: relative;
+
+    }
+}
+.navegador {
+	grid-area: nav;
+    background: rgb(0,212,255);
+    background: linear-gradient(90deg, rgba(0,212,255,1) 60%, rgba(207,195,58,1) 95%);
+    -webkit-box-shadow: 0px 15px 24px -14px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 15px 24px -14px rgba(0,0,0,0.5);
+    box-shadow: 0px 15px 24px -14px rgba(0,0,0,0.5);
+    @include flex(flex, center, center);
+    @include size(100%,100%);
+	position: sticky;
+	top: 0;
+	z-index: 100;
+    ul{
+        @include size(80%,80%);
+        @include flex(flex, space-around, center);
+        list-style: none;
+        text-transform: uppercase;
+    }
+    li{
+        @include size(80%,50%);
+        @include flex(flex, center, center);
+        @include font(nth($font-size, 5), center, none, uppercase);
+        &:hover{
+            @include font(nth($font-size, 8), center, none, uppercase);
+            color: nth($colores, 5);
+            }
+        a:visited {
+            color: nth($colores, 6);
+        }
+    
+    }
+}

@@ -1,0 +1,202 @@
+/* -  -  -  -  -  -  -  -  VARIABLES  -  -  -  -  -  -  -  - */
+/* -  -  -  -  -  -  -  -  MIXIN  -  -  -  -  -  -  -  - */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: url("https://fonts.google.com/specimen/Nova+Mono?classification=Display,Monospace"); }
+
+.grid-container {
+  margin: 0 auto;
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 500px 100px auto 350px;
+  grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer"; }
+
+.encabezado {
+  grid-area: header;
+  background: red; }
+  .encabezado img {
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    position: relative; }
+
+.navegador {
+  grid-area: nav;
+  background: #00d4ff;
+  background: linear-gradient(90deg, #00d4ff 60%, #cfc33a 95%);
+  -webkit-box-shadow: 0px 15px 24px -14px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 15px 24px -14px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 15px 24px -14px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100; }
+  .navegador ul {
+    height: 80%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    text-transform: uppercase; }
+  .navegador li {
+    height: 80%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase; }
+    .navegador li:hover {
+      font-size: 24px;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: grey; }
+    .navegador li a:visited {
+      color: black; }
+
+.pie {
+  grid-area: footer;
+  background-color: violet; }
+
+.foot {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: justify-content; }
+
+.foot-sec {
+  height: 20%;
+  width: 100%; }
+  .foot-sec h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 36px; }
+  .foot-sec p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px; }
+
+.section-footer {
+  list-style: none;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column; }
+  .section-footer li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+.propaganda {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: red;
+  font-size: 16px;
+  letter-spacing: 5px;
+  bottom: 0; }
+
+.principal {
+  grid-area: main;
+  margin: 0 auto; }
+
+.titulos-secciones {
+  margin: 20px;
+  font-size: 48px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.tarjetas {
+  margin: 0 auto;
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.tarjetas-item {
+  background: #e9e6e6;
+  margin: 2%;
+  border: 1px groove black;
+  -webkit-box-shadow: 0px 15px 24px -14px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 15px 24px -14px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 15px 24px -14px rgba(0, 0, 0, 0.5);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+  height: 400px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  .tarjetas-item img {
+    height: 85%;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-position: center; }
+  .tarjetas-item h2 {
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    height: 8%; }
+  .tarjetas-item h3 {
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    height: 7%; }
+  .tarjetas-item:hover {
+    height: 410px;
+    width: 410px;
+    box-shadow: rgba(0, 0, 0, 0.301) 0px -50px 36px -28px inset; }
+
+.bosque {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  color: #e9e6e6;
+  height: 700px;
+  width: 100%;
+  background: url("/img/bosque1.jpg");
+  background-position: center; }
+  .bosque h2 {
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.438);
+    height: 10%;
+    width: 100%; }
+  .bosque p {
+    margin: 50px auto;
+    padding: 1%;
+    height: auto;
+    width: 75%;
+    font-size: 20px;
+    text-align: justify;
+    text-decoration: none;
+    text-transform: none;
+    line-height: 50px;
+    background: rgba(0, 0, 0, 0.438); }

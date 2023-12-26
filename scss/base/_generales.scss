@@ -1,0 +1,42 @@
+/* -  -  -  -  -  -  -  -  VARIABLES  -  -  -  -  -  -  -  - */
+
+$colores: red, blue, white, violet, grey, black, rgb(233, 230, 230);
+
+$font-size: 5px, 6px, 10px, 12px, 16px, 18px, 20px, 24px, 36px, 48px;
+
+/* -  -  -  -  -  -  -  -  MIXIN  -  -  -  -  -  -  -  - */
+
+@mixin flex($flex, $content, $items) {
+	display: $flex;
+	align-items: $items;
+	justify-content: $content;
+}
+@mixin size($heigh, $width) {
+	height: $heigh;
+	width: $width;
+}
+@mixin font($font-size, $text-align, $text-decoration, $text-transform) {
+	font-size: $font-size;
+	text-align: $text-align;
+	text-decoration: $text-decoration;
+	text-transform: $text-transform;
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: url("https://fonts.google.com/specimen/Nova+Mono?classification=Display,Monospace");
+}
+
+.grid-container {
+	margin: 0 auto;
+	width: 95%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 500px 100px auto 350px;
+	grid-template-areas:
+		"header header header"
+		"nav nav nav"
+		"main main main"
+		"footer footer footer";
+}
