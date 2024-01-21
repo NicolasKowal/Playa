@@ -1,40 +1,19 @@
-.pie {
-	grid-area: footer;
-	background-color: nth($colores, 4);
-}
-.foot {
-	@include size(70%, 100%);
-	@include flex(flex, justify-content, center);
-}
-
-.foot-sec {
-	@include size(20%, 100%);
-
-	h2 {
-		@include flex(flex, center, center);
-		text-transform: uppercase;
-		font-size: nth($font-size, 9 );
-	}
-	p {
-		@include flex(flex, center, center);
-		font-size: nth($font-size, 5 );
-	}
-}
-.section-footer {
-	list-style: none;
-	@include size(100%, 100%);
-	@include flex(flex, space-around, center);
-	flex-direction: column;
-	li {
-		height: 100%;
-		@include flex(flex, center, center);
-	}
-}
-.propaganda {
-	@include size(10%, 100%);
-	@include flex(flex, center, center);
-	background: nth($colores, 1);
-	font-size: nth($font-size, 5 );
-	letter-spacing: 5px;
-	bottom: 0;
+.pie{
+    grid-area: footer;
+    background: orange;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 1%;
+    align-items: center;
+    p{
+        width: 75%;
+    }
+    ul{
+        width: 25%;
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+    }
 }
