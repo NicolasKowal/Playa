@@ -5,13 +5,15 @@
 	color: black;
 }
 
+$paleta: #004173, #0979b0, #0cb7f2, #7cdaf9, #b6ffff, white, black, rgb(202, 202, 202);
+
 .grid-container{
 	display: grid;
-	grid-template-rows: 40px 100px auto 75px  ;
+	grid-template-rows: 35px 75px auto 50px  ;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-areas:
 	"header header header header"
-	"aside nav nav nav"
+	"nav nav nav nav"
 	"main main main main"
 	"footer footer footer footer"
 	;

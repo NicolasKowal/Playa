@@ -1,49 +1,35 @@
 .encabezado{
     grid-area: header;
-    background: red;
-    display: flex;
-    align-items: center;
-    height: 100%;
-    width: 100%;
+    background: nth($paleta, 1);
     ul{
-        width: 50%;
         display: flex;
+        align-items: center;
+        height: 100%;
+        width: 40%;
         list-style: none;
         padding-left: 1%;
         li{
-            width: fit-content;
-            text-decoration: none;
-            padding-right: 2%;
-        }
-    }
-}
-
-.logo{
-    grid-area: aside;
-    background: purple;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
-
-.navegador{
-    grid-area: nav;
-    background: green;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
-    width: 100%;
-    ul{
-        height: 100%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        li{
-            width: max-content;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            padding-left: 1%;
+            color: nth($paleta, 6);
+            text-transform: capitalize;
+            a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                padding-left: 3px;
+                img{
+                    padding-right: 3px;
+                    height: 25px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
         }
     }
 }

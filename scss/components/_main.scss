@@ -1,8 +1,129 @@
-.principal{
-    grid-area: main;
-    background: blue;
+.principal {
+	grid-area: main;
 }
-.carusel{
-    height: 500px;
-    width: 100%;
+
+.tamano-section {
+	height: 400px;
+}
+
+.carusel {
+	height: 820px;
+	background: nth($paleta, 6);
+	img {
+		height: 820px;
+		width: 100%;
+		object-fit: cover;
+	}
+}	
+
+.carousel-caption{
+	top: 30%;
+	h2{
+		text-transform: uppercase;
+		font-size: 140px;
+		text-shadow: 1px 1px 2px black;
+	}
+}
+
+.imagen-fija {
+	background: url("/img/Club-de-Playa-scaled.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	h1,
+	p {
+		color: nth($paleta, 6);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	h1 {
+		height: 30%;
+		font-size: 72px;
+		letter-spacing: 10px;
+		text-transform: uppercase;
+	}
+	p {
+		height: 70%;
+		width: 50%;
+		margin: 0 auto;
+		padding: 2%;
+		text-align: justify;
+	}
+}
+
+.seccion-segunda {
+	background: nth($paleta, 5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	p{
+		height: 50%;
+		width: 50%;
+		text-align: justify;
+	}
+}
+
+.grilla-container {
+	width: 100%;
+	background: url("../img/Club-de-Playa-scaled.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.grilla {
+	height: 1000px;
+	margin: 0 auto;
+	width: 90%;
+	padding: 1%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-auto-rows: 400px;
+	gap: 10px;
+	justify-content: center;
+	align-items: center;
+}
+
+.grilla-element {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	flex-direction: column;
+	align-items: center;
+	height: 350px;
+	width: 300px;
+	border: 5px solid;
+	border-image: linear-gradient(90deg, nth($paleta, 1), nth($paleta, 5)) 1;
+	background: nth($paleta, 6);
+	text-shadow: 1px 1px 1px rgba(32,32,32,0.3);
+
+
+	h2 {
+		height: 30%;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 24px;
+	}
+	ul {
+		height: 70%;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		list-style: none;
+		li {
+			height: 30%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-transform: capitalize;
+		}
+	}
 }
