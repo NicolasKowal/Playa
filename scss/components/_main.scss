@@ -14,11 +14,11 @@
 		width: 100%;
 		object-fit: cover;
 	}
-}	
+}
 
-.carousel-caption{
+.carousel-caption {
 	top: 30%;
-	h2{
+	h2 {
 		text-transform: uppercase;
 		font-size: 140px;
 		text-shadow: 1px 1px 2px black;
@@ -53,15 +53,25 @@
 }
 
 .seccion-segunda {
-	background: nth($paleta, 5);
+	margin-top: 16px;
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	p{
-		height: 50%;
+	width: 100%;
+	p {
+		height: 100%;
 		width: 50%;
 		text-align: justify;
+		display: flex;
+		align-items: center;
+		padding-left: 50px;
+		padding-right: 50px;
 	}
+}
+.clearity {
+	background: nth($paleta, 5);
+}
+.oscurity {
+	background: nth($paleta, 4);
 }
 
 .grilla-container {
@@ -73,7 +83,7 @@
 }
 
 .grilla {
-	height: 1000px;
+	height: auto;
 	margin: 0 auto;
 	width: 90%;
 	padding: 1%;
@@ -96,34 +106,45 @@
 	width: 300px;
 	border: 5px solid;
 	border-image: linear-gradient(90deg, nth($paleta, 1), nth($paleta, 5)) 1;
-	background: nth($paleta, 6);
-	text-shadow: 1px 1px 1px rgba(32,32,32,0.3);
+	background: rgba(nth($paleta, 5), 0.55);
+	text-shadow: 1px 1px 1px rgba(32, 32, 32, 0.3);	
 
 
 	h2 {
-		height: 30%;
+		height: 40%;
 		width: 100%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		text-transform: uppercase;
 		text-align: center;
-		font-size: 24px;
+		font-size: 30px;
 	}
-	ul {
-		height: 70%;
+	div{
+		height: 60%;
 		width: 100%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
-		list-style: none;
-		li {
-			height: 30%;
+		p{
+			padding-left: 10px;
+			padding-right: 10px;
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			text-transform: capitalize;
+			text-align: justify;
+		}
+		ul {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			list-style: none;
+			li {
+				height: 30%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				text-transform: capitalize;
+			}
 		}
 	}
 }

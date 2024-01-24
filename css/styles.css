@@ -151,14 +151,24 @@
     text-align: justify; }
 
 .seccion-segunda {
-  background: #b6ffff;
+  margin-top: 16px;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  width: 100%; }
   .seccion-segunda p {
-    height: 50%;
+    height: 100%;
     width: 50%;
-    text-align: justify; }
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px; }
+
+.clearity {
+  background: #b6ffff; }
+
+.oscurity {
+  background: #7cdaf9; }
 
 .grilla-container {
   width: 100%;
@@ -168,7 +178,7 @@
   background-size: cover; }
 
 .grilla {
-  height: 1000px;
+  height: auto;
   margin: 0 auto;
   width: 90%;
   padding: 1%;
@@ -190,28 +200,37 @@
   width: 300px;
   border: 5px solid;
   border-image: linear-gradient(90deg, #004173, #b6ffff) 1;
-  background: white;
+  background: rgba(182, 255, 255, 0.55);
   text-shadow: 1px 1px 1px rgba(32, 32, 32, 0.3); }
   .grilla-element h2 {
-    height: 30%;
+    height: 40%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
     text-align: center;
-    font-size: 24px; }
-  .grilla-element ul {
-    height: 70%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    list-style: none; }
-    .grilla-element ul li {
-      height: 30%;
+    font-size: 30px; }
+  .grilla-element div {
+    height: 60%;
+    width: 100%; }
+    .grilla-element div p {
+      padding-left: 10px;
+      padding-right: 10px;
       display: flex;
       justify-content: center;
       align-items: center;
-      text-transform: capitalize; }
+      text-transform: capitalize;
+      text-align: justify; }
+    .grilla-element div ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      list-style: none; }
+      .grilla-element div ul li {
+        height: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: capitalize; }
