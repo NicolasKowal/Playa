@@ -191,6 +191,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100%;
+    width: 100%;
     text-decoration: none; }
     .novedades-item a div {
       height: 100%;
@@ -199,7 +201,7 @@
       flex-direction: column; }
       .novedades-item a div h4 {
         padding-top: 5%;
-        height: 35%;
+        height: 20%;
         width: 100%;
         display: flex;
         align-items: center;
@@ -207,7 +209,7 @@
         text-transform: capitalize;
         font-size: 20px; }
       .novedades-item a div p {
-        height: 100%;
+        height: 80%;
         width: 100%;
         padding: 3%;
         text-align: justify;
