@@ -2,32 +2,25 @@
     grid-area: header;
     background: nth($paleta, 1);
     ul{
-        display: flex;
-        align-items: center;
-        height: 100%;
-        width: 40%;
+        @include tamano(100%, 40%);
+        @include flex(flex, center, center);
         list-style: none;
         padding-left: 1%;
         li{
-            display: flex;
+            @include flex(flex, center, center);
             align-content: center;
-            justify-content: center;
-            align-items: center;
             padding-left: 1%;
             color: nth($paleta, 6);
+            font-size: nth($font, 4);
             text-transform: capitalize;
             a{
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include flex(flex, center, center);
                 text-decoration: none;
                 padding-left: 3px;
                 img{
                     padding-right: 3px;
                     height: 25px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    @include flex(flex, center, center);
                 }
             }
         }

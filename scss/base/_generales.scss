@@ -3,10 +3,22 @@
 	margin: 0;
 	box-sizing: border-box;
 	color: black;
-	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	font-family:"https://fonts.google.com/specimen/Red+Hat+Display?classification=Display&stroke=Sans+Serif";
 }
 
 $paleta: #004173, #0979b0, #0cb7f2, #7cdaf9, #b6ffff, white, black, rgb(202, 202, 202);
+$font: 10px, 12px, 15px, 17px, 20px, 24px, 26px, 30px, 36px, 42px, 50px, 72px, 140px;
+
+@mixin flex($flex, $items, $content) {
+	display: $flex;
+	align-items: $items;
+	justify-content: $content;
+}
+
+@mixin tamano($height, $width) {
+	height: $height;
+	width: $width;
+}
 
 .grid-container{
 	display: grid;

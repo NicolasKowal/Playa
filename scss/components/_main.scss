@@ -2,17 +2,16 @@
 	grid-area: main;
 }
 
-.tamano-section {
-	height: 400px;
-}
-
 .carusel {
 	height: 820px;
+	width: 100%;
+	@include tamano(820px, 100%);
 	background: nth($paleta, 6);
 	transition: 0.5s;
 	img {
 		height: 820px;
 		width: 100%;
+		@include tamano(820px, 100%);
 		object-fit: cover;
 	}
 }
@@ -21,13 +20,80 @@
 	top: 30%;
 	h2 {
 		text-transform: uppercase;
-		font-size: 140px;
+		font-size: nth($font, 13);
 		text-shadow: 1px 1px 2px black;
 	}
 }
 
-.carusel-box{
+.carusel-box {
 	border: 10px solid white;
+}
+
+.novedades {
+	height: 900px;
+	padding-top: 75px;
+	background: nth($paleta, 3);
+	h2,
+	h3 {
+		@include tamano(10%, 100%);
+		@include flex(flex, center, center);
+	}
+	h2 {
+		text-transform: uppercase;
+		font-size: nth($font, 11);
+	}
+	h3 {
+		text-transform: uppercase;
+		font-size: nth($font, 7);
+	}
+}
+.novedades-container {
+	margin: 0 auto;
+	@include tamano(80%, 90%);
+	padding: 1%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: 230px;
+	gap: 50px;
+	justify-content: center;
+	align-items: center;
+}
+
+.novedades-item {
+	background: nth($paleta, 5);
+	@include tamano(100%, 100%);
+	display: flex;
+	align-items: center;
+	a {
+		@include flex(flex, center, center);
+		text-decoration: none;
+		div {
+			@include tamano(100%, 60%);
+			display: flex;
+			flex-direction: column;
+			h4 {
+				padding-top: 5%;
+				@include tamano(35%, 100%);
+				@include flex(flex, center, center);
+				text-transform: capitalize;
+				font-size: nth($font, 5);
+			}
+			p {
+				@include tamano(100%, 100%);
+				padding: 3%;
+				text-align: justify;
+				font-size: nth($font, 3);
+				overflow: hidden;
+			}
+		}
+		img {
+			aspect-ratio: 1/1;
+			@include tamano(180px, 40%);
+			padding-left: 1%;
+			padding-right: 1%;
+		}
+	}
 }
 
 .imagen-fija {
@@ -35,51 +101,28 @@
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	h1,
+	height: auto;
+	h2,
 	p {
 		color: nth($paleta, 6);
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		@include flex(flex, center, center);
 	}
-	h1 {
-		height: 30%;
-		font-size: 72px;
+	h2 {
+		height: 200px;
+		font-size: nth($font, 12);
 		letter-spacing: 10px;
 		text-transform: uppercase;
 	}
 	p {
-		height: 70%;
-		width: 50%;
+		@include tamano(250px, 70%);
 		margin: 0 auto;
-		padding: 2%;
 		text-align: justify;
+		font-size: nth($font, 4);
 	}
-}
-
-.seccion-segunda {
-	margin-top: 16px;
-	display: flex;
-	align-items: center;
-	width: 100%;
-	p {
-		height: 100%;
-		width: 50%;
-		text-align: justify;
-		display: flex;
-		align-items: center;
-		padding-left: 50px;
-		padding-right: 50px;
-	}
-}
-.clearity {
-	background: nth($paleta, 5);
-}
-.oscurity {
-	background: nth($paleta, 4);
 }
 
 .grilla-container {
+	padding-top: 75px;
 	width: 100%;
 	background: url("../img/Club-de-Playa-scaled.jpg");
 	background-repeat: no-repeat;
@@ -90,105 +133,165 @@
 .grilla {
 	height: auto;
 	margin: 0 auto;
-	width: 90%;
+	@include tamano(1000px, 90%);
 	padding: 1%;
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-auto-rows: 400px;
-	gap: 10px;
+	gap: 50px;
 	justify-content: center;
 	align-items: center;
 }
 
 .grilla-element {
 	transition: 1s;
-	display: flex;
-	justify-content: center;
+	@include flex(flex, center, center);
 	margin: 0 auto;
 	flex-direction: column;
-	align-items: center;
-	height: 350px;
-	width: 300px;
+	@include tamano(425px, 300px);
 	border: 5px solid;
 	border-image: linear-gradient(90deg, nth($paleta, 1), nth($paleta, 5)) 1;
 	background: rgba(nth($paleta, 5), 0.55);
-	text-shadow: 1px 1px 1px rgba(32, 32, 32, 0.3);	
+	text-shadow: 1px 1px 1px rgba(32, 32, 32, 0.3);
 	h2 {
-		height: 40%;
-		width: 100%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		@include tamano(30%, 100%);
+		@include flex(flex, center, center);
 		text-transform: uppercase;
 		text-align: center;
-		font-size: 30px;
+		font-size: nth($font, 8);
 	}
-	div{
-		height: 60%;
-		width: 100%;
-		p{
-			padding-left: 10px;
-			padding-right: 10px;
-			display: flex;
-			justify-content: center;
-			align-items: center;
+	div {
+		@include tamano(70%, 100%);
+		p {
+			padding-left: 20px;
+			padding-right: 20px;
+			@include flex(flex, center, center);
 			text-transform: capitalize;
 			text-align: justify;
+			font-size: nth($font, 4);
 		}
+		ul {
+			@include flex(flex, center, center);
+			flex-direction: column;
+			list-style: none;
+			@include tamano(100%, 100%);
+			padding: 0;
+			font-size: nth($font, 4);
+			a {
+				height: 30%;
+				display: flex;
+				align-items: top;
+				li {
+					@include flex(flex, center, center);
+					text-transform: capitalize;
+				}
+			}
+		}
+	}
+	&:hover {
+		transform: scale(1.1);
+		background: rgba(nth($paleta, 5), 0.6);
+		h2,
+		li,
+		p {
+			color: nth($paleta, 2);
+		}
+	}
+	div {
 		ul {
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			flex-direction: column;
 			list-style: none;
-			height: 100%;
-			width: 100%;
+			@include tamano(100%, 100%);
 			padding: 0;
 			li {
+				padding-left: 20px;
+				padding-right: 20px;
 				height: 30%;
-				display: flex;
-				justify-content: center;
-				align-items: center;
+				@include flex(flex, center, top);
 				text-transform: capitalize;
+				text-align: center;
 			}
-		}
-	}&:hover{
-		transform: scale(1.1);
-		background: rgba(nth($paleta, 5), 0.6);
-		h2, li, p{
-			color: nth($paleta, 2);
 		}
 	}
 }
 
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-20px);
-    }
-    60% {
-        transform: translateY(-10px);
-    }
+.clearity {
+	background: nth($paleta, 5);
+}
+.oscurity {
+	background: nth($paleta, 4);
+}
+
+.seccion-historia {
+	margin-top: 16px;
+	@include flex(flex, center, center);
+	@include tamano(1300px, 100%);
+	h2 {
+		text-transform: uppercase;
+		letter-spacing: 5px;
+		font-size: nth($font, 12);
+	}
+	h3 {
+		text-align: center;
+		align-items: center;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		font-size: nth($font, 9);
+	}
+	div {
+		padding-top: 75px;
+		@include tamano(100%, 50%);
+		text-align: justify;
+		@include flex(flex, center, center);
+		flex-direction: column;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	p{
+		font-size: nth($font, 5);
+	}
+	ul{
+		li{
+			font-size: nth($font, 5);
+		}
+	}
 }
 
 
+@keyframes bounce {
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		transform: translateY(0);
+	}
+	40% {
+		transform: translateY(-20px);
+	}
+	60% {
+		transform: translateY(-10px);
+	}
+}
+
 .whatsapp {
-    position: fixed;
-    bottom: 25px;
-    right: 0px;
-    transform: translate(-50%, -50%);
-	img{
-		height: 50px;
-		width: 50px;
+	position: fixed;
+	bottom: 25px;
+	right: 0px;
+	transform: translate(-50%, -50%);
+	img {
+		@include tamano(50px, 50px);
 		transition: transform 0.3s ease;
-	}&:hover{
-		img{
+	}
+	&:hover {
+		img {
 			animation: bounce 0.6s ease 1;
 			transform: scale(1.1);
 		}
-}
+	}
 }
 

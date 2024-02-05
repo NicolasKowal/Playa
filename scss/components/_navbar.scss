@@ -1,7 +1,7 @@
 .navegador {
     grid-area: nav;
-    height: 100%;
-    width: 100%;
+    @include tamano(100%, 100%);
+
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -34,15 +34,13 @@
 
 
 .mid-nav{
-    height: 75px;
-    width: 75%;
+    @include tamano(75%, 75%);
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
     section{
-        width: 20%;
-        height: 100%;
+        @include tamano(100%, 20%);
         display: flex;
         justify-content: right;
         align-items: center;
@@ -60,11 +58,9 @@
         }
     }
     div{
-        width: 80%;
-        height: 100%;
+        @include tamano(100%, 80%);
         ul{
-            height: 100%;
-            width: 75%;
+            @include tamano(100%, 75%);
             margin: 0 auto;
             display: flex;
             align-items: center;
@@ -73,6 +69,10 @@
                 a{
                     text-align: center;
                     text-transform: capitalize;
+                    font-size: nth($font, 6);
+                }
+                &:hover{
+                    font-size: larger;
                 }
             }
         }

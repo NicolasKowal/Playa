@@ -1,8 +1,6 @@
 .pie{
     grid-area: footer;
-    display: flex;
-    align-items: center;
-    align-content: center;
+    @include flex(flex, center, center);
     padding: 1%;
     background: nth($paleta, 1);
     div{
@@ -10,5 +8,6 @@
         align-items: center;
         justify-content: center;
         width: 100%;
+        font-size: nth($font, 5);
     }
 }

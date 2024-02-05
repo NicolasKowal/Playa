@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 		<link rel="stylesheet" type="text/css" href="css/styles.css" />
 		<title>Main</title>
@@ -11,14 +12,13 @@
 	<body class="grid-container">
 		<header class="encabezado">
 			<ul>
-				<li><a href="#">  <img src="img/icon/whatsapp.png" alt="telefono"> </a>0800-111-1234</li>
-				<li><a href="#">  <img src="img/icon/email.png" alt="mail">  </a>ejemplo@ejemplo.com</li>
-				<li><a href="#">  <img src="img/icon/facebook.png" alt="facebook">  </a></li>
-				<li><a href="#">  <img src="img/icon/gorjeo.png" alt="twitter">  </a></li>
-				<li><a href="#">  <img src="img/icon/instagram.png" alt="instagram">  </a></li>
+				<li><a href="#" target="_blank">  <img src="img/icon/whatsapp.png" alt="telefono"> </a>0800-111-1234</li>
+				<li><a href="#" target="_blank">  <img src="img/icon/email.png" alt="mail">  </a>ejemplo@ejemplo.com</li>
+				<li><a href="#" target="_blank">  <img src="img/icon/facebook.png" alt="facebook">  </a></li>
+				<li><a href="#" target="_blank">  <img src="img/icon/gorjeo.png" alt="twitter">  </a></li>
+				<li><a href="#" target="_blank">  <img src="img/icon/instagram.png" alt="instagram">  </a></li>
 			</ul>
 		</header>
-
 	<nav class=" navegador navbar navbar-expand-lg navbar-light">
 	<div class="mid-nav">
 		<section>
@@ -27,16 +27,16 @@
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav">
 				<li class="nav-item">
-					<a class="nav-link" href="#">solapa1</a>
+					<a class="nav-link" href="#solapa1">novedades</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">solapa2</a>
+					<a class="nav-link" href="#solapa3">¿que hacer?</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">solapa3</a>
+					<a class="nav-link" href="#solapa2">historia</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">solapa4</a>
+					<a class="nav-link" href="#solapa4">solapa4</a>
 				</li>
 			</ul>
 		</div>
@@ -44,75 +44,145 @@
 	</nav>
 	<main class="principal">
 		<section class="carusel">
-			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<img class="d-block w-100" src="img/carusel/playas-Cadiz-podras-directo-webcam_1809129855_188437193_1920x1080.jpg" alt="First slide" />
-						<div class="carousel-caption d-none d-md-block">
-							<h2 class="animate__animated animate__backInDown carusel-box">bienvenidos a la playa</h2>
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
+				<ol class="carousel-indicators">
+					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-item active">
+					<img class="d-block w-100" src="img/carusel/playas-Cadiz-podras-directo-webcam_1809129855_188437193_1920x1080.jpg" alt="First slide" />
+					<div class="carousel-caption d-none d-md-block">
+						<h2 class="animate__animated animate__backInDown carusel-box">bienvenidos a la playa</h2>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="img/carusel/Playa-del-Carmen.jpg" alt="Second slide">
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="img/carusel/background_morskaya_zvezda_bereg_plyazh_pesok_151771_pic_image_wallpaper_big_1920x1080.jpg" alt="Third slide">
+				</div>
+			</div>
+				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only"></span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only"></span>
+				</a>
+			</div>
+		</section>
+		<section class="novedades" id="solapa1">
+			<h2>
+				novedades
+			</h2>
+			<h3>
+				enterate de todas las novedades para las que estamos trabajando para vos
+			</h3>
+			<div class="novedades-container">
+				<div class="novedades-item">
+					<a href="#" target="_blank">
+						<img src="./img/novedades/Centro_Cultural_Recoleta_2012.jpg" alt="centro cultural">
+						<div>
+							<h4>
+								Renovación del Centro Histórico
+							</h4>
+							<p>
+								En una iniciativa emocionante, el pueblo ha comenzado un ambicioso proyecto de renovación para revitalizar su centro histórico. Calles adoquinadas, 
+								pintorescas plazas y fachadas restauradas están transformando la apariencia del pueblo, creando un encanto renovado que atraerá tanto a residentes como a visitantes.
+							</p>
 						</div>
-					</div>
-					<div class="carousel-item">
-						<img class="d-block w-100" src="img/carusel/Playa-del-Carmen.jpg" alt="Second slide" />
-					</div>
-					<div class="carousel-item">
-						<img class="d-block w-100" src="img/carusel/background_morskaya_zvezda_bereg_plyazh_pesok_151771_pic_image_wallpaper_big_1920x1080.jpg" alt="Third slide" />
-					</div>
+					</a>
+				</div>
+				<div class="novedades-item">
+					<a href="#" target="_blank">
+						<img src="./img/novedades/original.jpg" alt="feria">
+						<div>
+							<h4>
+								Feria de Agricultores Sostenibles
+							</h4>
+							<p>
+								El pueblo está dando un giro verde con la introducción de una feria de agricultores sostenibles. Los agricultores locales ahora ofrecen productos frescos y orgánicos, 
+								destacando la importancia de la agricultura responsable. Esta iniciativa no solo beneficia a la salud de la comunidad, sino también al medio ambiente.
+							</p>
+						</div>
+					</a>
+				</div>
+				<div class="novedades-item">
+					<a href="#" target="_blank">
+						<img src="./img/novedades/Senderismo-GR-11-Prineos.jpg" alt="senderismo">
+						<div>
+							<h4>
+								Rutas de Senderismo Mejoradas
+							</h4>
+							<p>
+								Con el objetivo de fomentar un estilo de vida activo y explorar la belleza natural que rodea al pueblo, se han mejorado y marcado nuevas rutas de senderismo. 
+								Desde senderos panorámicos hasta cascadas escondidas, estas rutas ofrecen una experiencia única para los amantes de la naturaleza y los entusiastas del aire libre.
+							</p>
+						</div>
+					</a>
+				</div>
+				<div class="novedades-item">
+					<a href="#" target="_blank">
+						<img src="./img/novedades/Quito,_Ecuador_72.jpg" alt="centro cultural">
+						<div>
+							<h4>
+								Inauguración del Centro Cultural
+							</h4>
+							<p>
+								El pueblo celebra la apertura de su nuevo Centro Cultural, un espacio vibrante que alberga eventos artísticos, exposiciones y actividades culturales. 
+								Este hub creativo promueve la diversidad cultural y proporciona a la comunidad un lugar para conectarse a través del arte y la expresión.
+							</p>
+						</div>
+					</a>
+				</div>
+				<div class="novedades-item">
+					<a href="#" target="_blank">
+						<img src="./img/novedades/DSC0268-1500x1000.jpg" alt="plaza mercado">
+						<div>
+							<h4>
+								Plaza del Mercado Renovada
+							</h4>
+							<p>
+								La histórica plaza del mercado ha experimentado una transformación completa. Ahora, con áreas de descanso sombreadas, zonas de juegos para niños y quioscos modernos, 
+								la plaza se ha convertido en un punto de encuentro animado. Los eventos semanales, como mercados de alimentos y artesanales, añaden una nueva dimensión de vitalidad.
+							</p>
+						</div>
+					</a>
+				</div>
+				<div class="novedades-item">
+					<a href="#" target="_blank">
+						<img src="./img/novedades/El-arte-urbano-.jpg" alt="arte urbano">
+						<div>
+							<h4>
+								Programa de Arte Urbano
+							</h4>
+							<p>
+								Las calles del pueblo se han convertido en lienzos vivientes con la implementación de un programa de arte urbano. Artistas locales y nacionales han dejado su huella en 
+								murales vibrantes que adornan las paredes del pueblo, creando una galería al aire libre que atrae a admiradores del arte y curiosos por igual. 
+								Este proyecto refleja la creatividad floreciente de la comunidad.
+							</p>
+						</div>
+					</a>
 				</div>
 			</div>
 		</section>
-        <section class="seccion-segunda tamano-section">
-			<p class="oscurity">
-				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid nemo omnis, 
-				officiis numquam eaque illum voluptas architecto quam vel. Tempora hic, velit cupiditate dolore 
-				dolorem obcaecati veritatis aperiam officiis esse.
-				Ad ab vitae quaerat adipisci earum, nihil pariatur qui voluptate hic non dolores quis porro, illo 
-				ullam nobis quasi dicta natus totam ex quas, omnis laudantium! Consequuntur laboriosam reiciendis 
-				perspiciatis.Nostrum id quis voluptatem, earum, autem debitis, non magnam expedita provident impedit 
-				facilis maxime cum ab eos? Aliquam ipsam iste nam nostrum quo adipisci necessitatibus minus, commodi 
-				et asperiores repellat.
-				Veritatis quisquam facilis non quidem aut quaerat, delectus, cumque alias quibusdam perferendis 
-				possimus expedita vel, maiores provident vitae eveniet repudiandae velit dignissimos qui corporis eum?
-				Corrupti quasi modi repellendus quidem.
-				Atque eligendi doloremque ipsa, soluta ipsum magni sapiente, aperiam delectus ratione reprehenderit 
-				facilis exercitationem velit ad debitis adipisci ex corrupti, blanditiis nesciunt facere? Dolorem ipsa 
-				saepe adipisci laboriosam culpa maiores.
-			</p>
-			<p class="clearity">
-				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid nemo omnis, 
-				officiis numquam eaque illum voluptas architecto quam vel. Tempora hic, velit cupiditate dolore 
-				dolorem obcaecati veritatis aperiam officiis esse.
-				Ad ab vitae quaerat adipisci earum, nihil pariatur qui voluptate hic non dolores quis porro, illo 
-				ullam nobis quasi dicta natus totam ex quas, omnis laudantium! Consequuntur laboriosam reiciendis 
-				perspiciatis.Nostrum id quis voluptatem, earum, autem debitis, non magnam expedita provident impedit 
-				facilis maxime cum ab eos? Aliquam ipsam iste nam nostrum quo adipisci necessitatibus minus, commodi 
-				et asperiores repellat.
-				Veritatis quisquam facilis non quidem aut quaerat, delectus, cumque alias quibusdam perferendis 
-				possimus expedita vel, maiores provident vitae eveniet repudiandae velit dignissimos qui corporis eum?
-				Corrupti quasi modi repellendus quidem.
-				Atque eligendi doloremque ipsa, soluta ipsum magni sapiente, aperiam delectus ratione reprehenderit 
-				facilis exercitationem velit ad debitis adipisci ex corrupti, blanditiis nesciunt facere? Dolorem ipsa 
-				saepe adipisci laboriosam culpa maiores.
-			</p>
-        </section>
-        <section class="grilla-container">
-			<div class="imagen-fija tamano-section">
-				<h1>
-					Titulo
-				</h1>
+        <section id="solapa3"  class="grilla-container">
+			<div class="imagen-fija">
+				<h2>
+					¿que hacer?
+				</h2>
 				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi totam unde a porro amet rerum, 
-					reprehenderit tempora ratione molestias doloremque doloribus? Quo accusamus doloremque culpa 
-					ab hic nesciunt modi sequi.
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi totam unde a porro amet rerum, 
-					reprehenderit tempora ratione molestias doloremque doloribus? Quo accusamus doloremque culpa 
-					ab hic nesciunt modi sequi.
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi totam unde a porro amet rerum, 
-					reprehenderit tempora ratione molestias doloremque doloribus? Quo accusamus doloremque culpa 
-					ab hic nesciunt modi sequi.
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi totam unde a porro amet rerum, 
-					reprehenderit tempora ratione molestias doloremque doloribus? Quo accusamus doloremque culpa 
-					ab hic nesciunt modi sequi.
+					Enclavado en un escenario pintoresco, nuestro destino turístico ofrece una experiencia multisensorial que deleitará a los visitantes más exigentes. 
+					La gastronomía local, rica en sabores auténticos y ingredientes frescos de la región, invita a los amantes de la buena comida a disfrutar de exquisitos platos que fusionan tradición 
+					y creatividad. La feria de artesanos, un vibrante mercado al aire libre, exhibe la destreza y creatividad de talentosos artistas locales, ofreciendo a los visitantes la oportunidad 
+					de llevarse consigo piezas únicas como recuerdo de su visita. Nuestros balnearios, acogedores y cuidados, brindan el escenario perfecto para relajarse y disfrutar del sol y del mar. 
+					Además, nuestra agenda rebosa de eventos culturales y recreativos que atraen a personas de todas las edades. En cuanto al alojamiento, una amplia gama de opciones, desde acogedores 
+					bed and breakfast hasta lujosos resorts, garantiza que cada huésped encuentre el hospedaje perfecto. La reserva natural, un santuario de biodiversidad, invita a los amantes de la 
+					naturaleza a explorar senderos fascinantes y a maravillarse con la flora y fauna autóctona. Una peatonal bulliciosa, llena de tiendas encantadoras y cafés acogedores, 
+					añade un toque pintoresco a la experiencia urbana. Por último, nuestra reconocida escuela de surf, con instructores expertos, ofrece la oportunidad de aprender y perfeccionar habilidades 
+					en las olas, atrayendo a entusiastas de este emocionante deporte de todo el mundo.
 				</p>
 			</div>
 			<div class="grilla">
@@ -122,9 +192,9 @@
 					</h2>
 					<div>
 						<ul>
-							<li>sdf</li>
-							<li>qwe</li>
-							<li>asd</li>
+							<a href="#"> <li>Mariscos del Sol</li> </a>
+							<a href="#"> <li>Arena y Sazón</li> </a>
+							<a href="#"> <li>Briza Marina Grill</li> </a>
 						</ul>
 					</div>
 				</div>
@@ -134,9 +204,9 @@
 					</h2>
 					<div>
 						<p>
-							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, eveniet iure. 
-							Iste beatae corporis fugiat ipsum voluptate officia consequuntur quas eius 
-							nihil aliquid vitae maiores aperiam dignissimos, cum laboriosam est?
+							Ubicada en el corazón del destino, la feria de artesanos es un bullicioso mercado que exhibe la destreza de talentosos creadores locales. 
+							Desde coloridas cerámicas y tejidos artesanales hasta joyería única, los visitantes pueden explorar y adquirir piezas auténticas mientras disfrutan de 
+							actuaciones en vivo y la animada atmósfera cultural.
 						</p>
 					</div>
 				</div>
@@ -145,11 +215,10 @@
 						balnearios					
 					</h2>
 					<div>
-						<ul>
-							<li>sdf</li>
-							<li>qwe</li>
-							<li>asd</li>
-						</ul>
+						<p>
+							los visitantes pueden sumergirse en un oasis de bienestar, disfrutando de masajes relajantes, tratamientos rejuvenecedores y 
+							serenas sesiones junto a la piscina para desconectar del estrés diario.
+						</p>
 					</div>
 				</div>
 				<div class="grilla-element">
@@ -158,9 +227,9 @@
 					</h2>
 					<div>
 						<ul>
-							<li>sdf</li>
-							<li>qwe</li>
-							<li>asd</li>
+							<li>Festival de Música en la Playa.</li>
+							<li>Carnaval Costero.</li>
+							<li>Competición de Fogatas Nocturnas en la Playa.</li>
 						</ul>
 					</div>
 				</div>
@@ -170,9 +239,9 @@
 					</h2>
 					<div>
 						<ul>
-							<li>sdf</li>
-							<li>qwe</li>
-							<li>asd</li>
+							<a href=""> <li>Playa Serena Spa & Resort</li> </a>
+							<a href=""> <li>AquaVista Wellness Retreat</li> </a>
+							<a href=""> <li>Bruma Marina Relaxation Cove</li> </a>
 						</ul>
 					</div>
 				</div>
@@ -182,9 +251,8 @@
 					</h2>
 					<div>
 						<p>
-							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, eveniet iure. 
-							Iste beatae corporis fugiat ipsum voluptate officia consequuntur quas eius 
-							nihil aliquid vitae maiores aperiam dignissimos, cum laboriosam est?
+							Sumérgete en la maravilla natural de nuestra reserva, un santuario de biodiversidad donde senderos serpenteantes te llevan a través de bosques exuberantes, 
+							revelando cascadas escondidas y ofreciendo vistas impresionantes de la flora y fauna autóctona.
 						</p>
 					</div>
 				</div>
@@ -194,9 +262,8 @@
 					</h2>
 					<div>
 						<p>
-							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, eveniet iure. 
-							Iste beatae corporis fugiat ipsum voluptate officia consequuntur quas eius 
-							nihil aliquid vitae maiores aperiam dignissimos, cum laboriosam est?
+							La peatonal, flanqueada por boutiques encantadoras y cafeterías acogedoras, es el corazón palpitante de la vida urbana. 
+							Un lugar donde los visitantes pueden pasear sin preocupaciones, disfrutando de compras relajadas y deliciosos sabores locales.
 						</p>
 					</div>
 				</div>
@@ -205,16 +272,82 @@
 						escuela de surf
 					</h2>
 					<div>
-						<ul>
-							<li>sdf</li>
-							<li>qwe</li>
-							<li>asd</li>
-						</ul>
+						<p>
+							Experimenta la emoción del surf con nuestra escuela especializada, donde instructores expertos te guiarán para dominar las olas. 
+							Desde principiantes hasta surfistas avanzados, todos pueden disfrutar de lecciones personalizadas en un ambiente amigable y seguro.
+						</p>
 				</div>
 			</div>
         </section>
+        <section class="seccion-historia" id="solapa2">
+			<div class="oscurity">
+				<h2>
+					historia
+				</h2>
+				<p>
+					El devenir de Villa Gesell está ligado a la figura de su Fundador, Carlos Idaho Gesell, comerciante e inventor dedicado a la fabricación y venta de muebles y articulos para bebes. 
+					Para asegurarse la obtención de la madera para su fábrica decidió plantar un bosque en un amplio campo de médanos en la costa bonaerense sin saber que fundaría una ciudad.	
+				</p>
+				<h3>La evolución de Villa Gesell presenta tres fases de desarrollo:</h3>
+				<ul>
+					<li>La primera se basa en la fijación de los médanos y tareas de forestación con especies exóticas (1931-1940) Estabilizado el movimiento de arena surge la idea de urbanizar</li>
+					<li>La segunda fase basada en la colonización y búsqueda de inversores para la conformación de una nueva sociedad (1941-1970).</li>
+					<li>La tercera fase promueve el desarrollo de la localidad a partir del valor otorgado a la playa como recurso natural y económico (1971-2012).</li>
+				</ul>
+				<h3>Primera fase: La Fijación de los Médanos</h3>
+				<p>
+					Según los registros de propiedad consultados las tierras donde se funda Villa Gesell pertenecían a la familia Leloir e integraban el partido de General Madariaga. 
+					Los primeros propietarios deciden desafectar el borde costero de su estancia dedicada a la cría de ganado, formado por una barrera medanosa. 
+					De esta manera surge una fracción de 3027 has de médanos que son puestas a la venta y las adquiere un vecino de Madariaga llamado Saenz Valiente con la intención de realizar 
+					un emprendimiento dedicado a la cría de cerdos. El sistema de corrales construido 
+					(palo a pique) la naturaleza del suelo (arenoso) y los hábitos de la especie (cavar) pronto desalentaron al inversor ya que los cerdos se escapaban y el negocio se desvanecía.
+				</p>
+				<h3>Segunda fase: Colonización y búsqueda de inversores para la conformación de una nueva Sociedad</h3>
+				<p>
+					La segunda fase se caracteriza por el crecimiento del balneario que asume las características de un proceso de colonización donde el fundador intenta captar inversores 
+					y una población residente para conformar una nueva sociedad. El carácter y la tenacidad de Gesell lo llevó a quedarse con la inversión en la costa y ante la falta de dinero 
+					reemplazó el fin forestal por turístico inmobiliario, construyó una vivienda (La Golondrina) y la alquiló durante el verano de 1941, luego llegaron los turistas y el primer loteo,
+					dos años mas tarde comenzó la urbanización.
+				</p>
+			</div>
+			<div class="clearity">
+				<p>
+					El crecimiento de servicios y radicaciones comerciales impulsan la construcción y las empresas familiares. 
+					Se perfila y desarrolla la ciudad basada en la actividad turística del verano y la construcción durante el resto del año La urbanización fue pensada como un lugar distinto 
+					para personas a las cuales les gustara la vida lo mas natural y simple posible (Gesell, 1983). 
+					En la década de los años 60 el pujante centro turístico registra 1347 habitantes, luego recibe parte del movimiento hippie argentino y adopta una imagen de bohemia y libertad, 
+					es el tiempo de los mochileros, los fogones, las carpas y la vida nocturna frente al mar (Masor, 1975).
+				</p>
+				<p>
+					El crecimiento urbano se intensificó especialmente en los primeros 300 mts de la línea de costa y en los sectores céntricos de la ciudad, sobre terrenos ocupados por los medanos. 
+					La superficie construida aumentó la impermeabilidad del suelo y en consecuencia los flujos superficiales evacuan directamente sobre la playa (Gesell, 1893; Masor, 1975).
+					Consolidada el área central, la localidad se expande hacia el sur en forma paralela a la costa aumentando la oferta de alojamiento extra hotelera, y hacia el oeste 
+					profundizando el crecimiento demográfico con radicación de población estable en 1970 la población alcanza los 6341 habitantes. 
+				</p>
+				<h3>Tercera fase: El Desarrollo de la ciudad unido al valor otorgado a la playa como recurso natural y económico.</h3>				
+				<p>
+					La década de los años 70 se presenta como un momento de crisis y cambio. A medida que el balneario crece se origina un 
+					conflicto con la localidad cabecera municipal del Partido de General Madariaga. 
+					El trazado de la nueva localidad adopta un diseño longitudinal paralelo a la linea costera y se expande rapidamente 
+					hacia el sur debido a la plusvalía que generan los servicios urbanos en los lotes adquiridos sin construcción, la Municipalidad intenta implementar un Plan de 
+					Ordenamiento Urbano siguiendo las pautas del organismo provincial a fin de consolidar la urbanización impidiendo nuevos loteos hacia el sur. 
+					La comunidad entendió que esta medida paralizaba la construcción, los inversores se irian y los residentes perderian sus trabajos. 
+				</p>
+				<p>
+					Bajo la iniciativa de la Sociedad de Fomento se organiza un movimiento denominado “El Geselazo” donde un importante número de vecinos marcha a la Municipalidad de Madariaga y 
+					luego de varias reuniones logra dejar sin efecto la ordenanza que regulaba la nueva zonificación. 
+					En respuesta al plan municipal frustrado Carlos Gesell implementa una estrategia comercial que denomina “Plan Galopante” donde estipula una reducción del 50% del valor del terreno 
+					si la edificación se termina en un plazo de 6 meses contando a partir de la fecha de compra. De esta manera el Plan Galopante se convirtió en un instrumento 
+					eficaz para la comercialización de los lotes y permitió una efectiva ocupación y construcción tratando de desalentar a los posibles compradores que solo buscaban 
+					beneficiarse con la reventa del terreno, luego de tener los servicios urbanos básicos.
+				</p>
+			</div>
+        </section>
+		<section id="solapa4">
+			Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus numquam corrupti, debitis rem ea consequuntur eum hic sit sapiente, voluptatem repellat. Necessitatibus architecto tempore adipisci amet nesciunt at, minus vel.
+		</section>
 		<div class="whatsapp">
-			<a href="#"> <img src="./img/whatsapp.png" alt="whatsapp"> </a>
+			<a href="#" target="_blank"> <img src="./img/whatsapp.png" alt="whatsapp"> </a>
 		</div>
 	</main>
 		<footer class="pie">
@@ -223,6 +356,9 @@
 			</div>
 		</footer>
 	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="script.js"></script>	
