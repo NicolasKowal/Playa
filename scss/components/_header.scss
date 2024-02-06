@@ -3,12 +3,11 @@
     background: nth($paleta, 1);
     ul{
         @include tamano(100%, 40%);
-        @include flex(flex, center, center);
+        @include flex(flex, center, left);
         list-style: none;
         padding-left: 1%;
         li{
             @include flex(flex, center, center);
-            align-content: center;
             padding-left: 1%;
             color: nth($paleta, 6);
             font-size: nth($font, 4);

@@ -1,0 +1,292 @@
+@media (max-width: 1300px){
+    .mid-nav{
+        @include tamano(75%, 75%);
+        @include flex(flex, center, center);
+        section{
+            @include tamano(100%, 20%);
+            @include flex(flex, center, left);
+            img{
+                height: 50px;
+                @include flex(flex, center, left);
+                transition: transform 0.3s ease;
+            }
+            &:hover{
+                img{
+                    animation: flip 0.6s ease 1;
+                }
+            }
+        }
+        div{
+            @include tamano(100%, 80%);
+            ul{
+                @include tamano(100%, 75%);
+                margin: 0 auto;
+                @include flex(flex, center, space-between);
+                li{
+                    a{
+                        text-align: center;
+                        text-transform: capitalize;
+                        font-size: nth($font, 6);
+                        &:hover{
+                            font-size: nth($font, 7);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .carusel {
+        @include tamano(800px, 100%);
+        img {
+            @include tamano(800px, 100%);
+        }
+    }
+    .carousel-caption {
+        h2 {
+            font-size: nth($font, 12);
+        }
+    }
+    .novedades {
+        height: 750px;
+        h2 {
+            font-size: nth($font, 10);
+        }
+        h3 {
+            font-size: nth($font, 6);
+        }
+    }
+    .novedades-container {
+        grid-template-rows: 200px;
+        gap: 40px;
+    }
+    .novedades-item {
+        a {
+            div {
+                h4 {
+                    font-size: nth($font, 4);
+                }
+                p {
+                    font-size: nth($font, 2);
+                }
+            }
+            img {
+                aspect-ratio: 1/1;
+                @include tamano(150px, 40%);
+            }
+        }
+    }
+    .imagen-fija {
+        h2 {
+            height: 100px;
+            font-size: nth($font, 11);
+        }
+        p {
+            @include tamano(400px, 70%);
+            font-size: nth($font, 4);
+        }
+    }
+    .grilla {
+        height: auto;
+        margin: 0 auto;
+        @include tamano(1400px, 90%);
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 400px;
+        gap: 50px;
+    }
+    .grilla-element {
+        @include tamano(425px, 300px);
+        h2 {
+            font-size: nth($font, 8);
+        }
+        div {
+            @include tamano(70%, 100%);
+            p {
+                font-size: nth($font, 4);
+            }
+            ul {
+                font-size: nth($font, 4);
+            }
+        }
+    }
+    .seccion-historia {
+        @include tamano(1430px, 100%);
+        h2 {
+            font-size: nth($font, 11);
+        }
+        h3 {
+            font-size: nth($font, 8);
+        }
+        p{
+            font-size: nth($font, 4);
+        }
+    }
+    .pie{
+        div{
+            font-size: nth($font, 4);
+        }
+    }
+}
+
+@media (max-width: 1100px){
+    .encabezado{
+        ul{
+            @include tamano(100%, 50%);
+            li{
+                font-size: nth($font, 3);
+                a{
+                    img{
+                        height: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .mid-nav{
+        section{
+            @include tamano(100%, 20%);
+        }
+        div{
+            ul{
+                li{
+                    a{
+                        font-size: nth($font, 5);       
+                        &:hover{
+                        font-size: nth($font, 6);
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+    .carusel {
+        @include tamano(750px, 100%);
+        img {
+            @include tamano(750px, 100%);
+        }
+    }
+    .carousel-caption {
+        h2 {
+            font-size: nth($font, 12);
+        }
+    }
+    .novedades {
+        height: 1100px;
+        h2 {
+            font-size: nth($font, 10);
+        }
+        h3 {
+            margin: 0 auto;
+            text-align: center;
+            width: 80%;
+            font-size: nth($font, 6);
+        }
+    }
+    .novedades-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 230px;
+        gap: 40px;
+    }
+    .novedades-item {
+        a {
+            div {
+                h4 {
+                    font-size: nth($font, 4);
+                }
+                p {
+                    font-size: nth($font, 2);
+                }
+            }
+            img {
+                aspect-ratio: 1/1;
+                @include tamano(150px, 40%);
+            }
+        }
+    }
+    .imagen-fija {
+        h2 {
+            height: 100px;
+            font-size: nth($font, 11);
+        }
+        p {
+            @include tamano(450px, 70%);
+            font-size: nth($font, 4);
+        }
+    }
+    .grilla {
+        @include tamano(1900px, 90%);
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 400px;
+        gap: 50px;
+    }
+    .grilla-element {
+        @include tamano(425px, 300px);
+        h2 {
+            font-size: nth($font, 8);
+        }
+        div {
+            @include tamano(70%, 100%);
+            p {
+                font-size: nth($font, 4);
+            }
+            ul {
+                font-size: nth($font, 4);
+            }
+        }
+    }
+    .seccion-historia {
+        @include tamano(1430px, 100%);
+        h2 {
+            font-size: nth($font, 10);
+        }
+        h3 {
+            font-size: nth($font, 7);
+        }
+        p{
+            font-size: nth($font, 3);
+        }
+    }
+    .pie{
+        div{
+            font-size: nth($font, 4);
+        }
+    }
+}
+
+@media (max-width: 950px){
+    .mid-nav{
+        section{
+            @include tamano(100%, 20%);
+        }
+        div{
+            ul{
+                li{
+                    a{
+                        font-size: nth($font, 5);      
+                        &:hover{
+                        font-size: nth($font, 6);
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+    .seccion-historia {
+        @include tamano(1800px, 100%);
+        h2 {
+            font-size: nth($font, 9);
+        }
+        h3 {
+            font-size: nth($font, 5);
+        }
+        p{
+            font-size: nth($font, 4);
+        }
+        ul{
+            li{
+                font-size: nth($font, 4);
+            }
+        }
+    }
+}

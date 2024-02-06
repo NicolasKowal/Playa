@@ -50,21 +50,18 @@
 .novedades-container {
 	margin: 0 auto;
 	@include tamano(80%, 90%);
+	@include flex(grid, center, center);
 	padding: 1%;
 	margin: 0 auto;
-	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-auto-rows: 230px;
 	gap: 50px;
-	justify-content: center;
-	align-items: center;
 }
 
 .novedades-item {
 	background: nth($paleta, 5);
 	@include tamano(100%, 100%);
-	display: flex;
-	align-items: center;
+	@include flex(flex, center, center);
 	a {
 		@include flex(flex, center, center);
 		@include tamano(100%, 100%);
@@ -77,6 +74,7 @@
 				padding-top: 5%;
 				@include tamano(20%, 100%);
 				@include flex(flex, center, center);
+				text-align: center;
 				text-transform: capitalize;
 				font-size: nth($font, 5);
 			}
@@ -115,7 +113,7 @@
 		text-transform: uppercase;
 	}
 	p {
-		@include tamano(250px, 70%);
+		@include tamano(300px, 70%);
 		margin: 0 auto;
 		text-align: justify;
 		font-size: nth($font, 4);
@@ -228,9 +226,8 @@
 }
 
 .seccion-historia {
-	margin-top: 16px;
 	@include flex(flex, center, center);
-	@include tamano(1300px, 100%);
+	@include tamano(1400px, 100%);
 	h2 {
 		text-transform: uppercase;
 		letter-spacing: 5px;

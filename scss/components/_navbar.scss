@@ -1,7 +1,6 @@
 .navegador {
     grid-area: nav;
     @include tamano(100%, 100%);
-
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -32,23 +31,13 @@
     }
 } 
 
-
 .mid-nav{
     @include tamano(75%, 75%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(flex, center, center);
     margin: 0 auto;
-    section{
-        @include tamano(100%, 20%);
-        display: flex;
-        justify-content: right;
-        align-items: center;
         img{
             height: 70px;
-            display: flex;
-            align-items: center;
-            justify-content: right;
+            @include flex(flex, center, left);
             transition: transform 0.3s ease;
         }
         &:hover{
@@ -56,24 +45,22 @@
                 animation: flip 0.6s ease 1;
             }
         }
-    }
     div{
         @include tamano(100%, 80%);
         ul{
             @include tamano(100%, 75%);
             margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            @include flex(flex, center, space-between);
             li{
                 a{
                     text-align: center;
                     text-transform: capitalize;
-                    font-size: nth($font, 6);
+                    font-size: nth($font, 6);                
+                    &:hover{
+                        font-size: nth($font, 7);
+                    }
                 }
-                &:hover{
-                    font-size: larger;
-                }
+
             }
         }
     }
