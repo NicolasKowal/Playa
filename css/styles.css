@@ -122,13 +122,9 @@
 .carusel {
   height: 820px;
   width: 100%;
-  height: 820px;
-  width: 100%;
   background: white;
   transition: 0.5s; }
   .carusel img {
-    height: 820px;
-    width: 100%;
     height: 820px;
     width: 100%;
     object-fit: cover; }
@@ -495,7 +491,7 @@
       .grilla-element div ul {
         font-size: 17px; }
   .seccion-historia {
-    height: 1430px;
+    height: 1500px;
     width: 100%; }
     .seccion-historia h2 {
       font-size: 50px; }
@@ -587,16 +583,9 @@
   .pie div {
     font-size: 17px; } }
 
-@media (max-width: 950px) {
-  .mid-nav section {
-    height: 100%;
-    width: 20%; }
-  .mid-nav div ul li a {
-    font-size: 20px; }
-    .mid-nav div ul li a:hover {
-      font-size: 24px; }
+@media (max-width: 1000px) {
   .seccion-historia {
-    height: 1800px;
+    height: 1900px;
     width: 100%; }
     .seccion-historia h2 {
       font-size: 36px; }
@@ -606,3 +595,197 @@
       font-size: 17px; }
     .seccion-historia ul li {
       font-size: 17px; } }
+
+@media (max-width: 992px) {
+  .mid-nav {
+    padding: 0;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: start; }
+    .mid-nav img {
+      height: 60px; } }
+
+@media (max-width: 950px) {
+  .mid-nav section {
+    height: 100%;
+    width: 20%; }
+  .mid-nav div ul li a {
+    font-size: 20px; }
+    .mid-nav div ul li a:hover {
+      font-size: 24px; }
+  .seccion-historia {
+    height: 2000px;
+    width: 100%; }
+    .seccion-historia h2 {
+      font-size: 36px; }
+    .seccion-historia h3 {
+      font-size: 20px; }
+    .seccion-historia p {
+      font-size: 17px; }
+    .seccion-historia ul li {
+      font-size: 17px; } }
+
+@media (max-width: 900px) {
+  .mid-nav section {
+    height: 100%;
+    width: 20%; }
+  .mid-nav div ul li a {
+    font-size: 20px; }
+    .mid-nav div ul li a:hover {
+      font-size: 24px; }
+  .seccion-historia {
+    height: 2000px;
+    width: 100%; }
+    .seccion-historia h2 {
+      font-size: 36px; }
+    .seccion-historia h3 {
+      font-size: 20px; }
+    .seccion-historia p {
+      font-size: 17px; }
+    .seccion-historia ul li {
+      font-size: 17px; } }
+
+@media (max-width: 780px) {
+  .oculto {
+    text-indent: -9999px;
+    display: block; }
+  .encabezado ul {
+    height: 100%;
+    width: 50%; }
+    .encabezado ul li {
+      font-size: 15px; }
+      .encabezado ul li a img {
+        height: 20px; }
+  .imagen-fija h2 {
+    height: 100px;
+    font-size: 72px; }
+  .imagen-fija p {
+    height: 500px;
+    width: 75%; }
+  .seccion-historia {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1; }
+    .seccion-historia div {
+      height: auto;
+      width: 100%; }
+  .carusel {
+    height: 700px;
+    width: 100%;
+    background: white; }
+    .carusel img {
+      height: 700px;
+      width: 100%; }
+  .carusel-box {
+    border: 2px solid white; }
+  .novedades {
+    height: 5400px; }
+    .novedades h2 {
+      height: 100px;
+      font-size: 42px; }
+    .novedades h3 {
+      height: 100px;
+      font-size: 24px; }
+  .novedades-container {
+    height: 2500px;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 300px;
+    gap: 30px; }
+  .novedades-item a {
+    height: 300px; }
+    .novedades-item a div h4 {
+      font-size: 20px; }
+    .novedades-item a div p {
+      font-size: 17px; }
+    .novedades-item a img {
+      aspect-ratio: 1/1;
+      height: 230px;
+      width: 40%; }
+  .imagen-fija h2 {
+    height: 100px;
+    font-size: 42px; }
+  .imagen-fija p {
+    height: 700px;
+    width: 80%;
+    font-size: 20px; }
+  .grilla {
+    height: 3700px;
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 400px;
+    gap: 50px; }
+  .grilla-element {
+    height: 375px;
+    width: 500px; }
+    .grilla-element div {
+      height: 80%;
+      width: 100%; }
+      .grilla-element div p {
+        font-size: 20px; }
+      .grilla-element div ul {
+        font-size: 20px; }
+  .pie div {
+    font-size: 17px; }
+  .whatsapp {
+    bottom: 5px;
+    transform: translate(-50%, -50%); }
+    .whatsapp img {
+      height: 40px;
+      width: 40px; } }
+
+@media (max-width: 600px) {
+  .mid-nav img {
+    height: 50px; }
+  .carusel {
+    height: 500px;
+    width: 100%; }
+    .carusel img {
+      height: 500px;
+      width: 100%; }
+  .carousel-caption {
+    top: 30%; }
+    .carousel-caption h2 {
+      font-size: 20px; }
+  .novedades {
+    height: 1700px; }
+    .novedades h2 {
+      height: 80px;
+      font-size: 42px; }
+    .novedades h3 {
+      height: 80px;
+      font-size: 17px; }
+  .novedades-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 200px;
+    gap: 40px; }
+  .imagen-fija h2 {
+    height: 100px;
+    font-size: 42px;
+    letter-spacing: 10px;
+    text-transform: uppercase; }
+  .imagen-fija p {
+    height: 300px;
+    width: 70%;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 17px; }
+  .imagen-fija h2 {
+    height: 100px;
+    font-size: 42px; }
+  .imagen-fija p {
+    height: 450px;
+    width: 80%;
+    font-size: 15px; }
+  .grilla {
+    height: 3600px;
+    width: 90%; }
+  .pie div {
+    font-size: 17px; }
+  .whatsapp {
+    bottom: 5px;
+    transform: translate(-50%, -50%); }
+    .whatsapp img {
+      height: 40px;
+      width: 40px; } }

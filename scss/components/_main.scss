@@ -3,14 +3,10 @@
 }
 
 .carusel {
-	height: 820px;
-	width: 100%;
 	@include tamano(820px, 100%);
 	background: nth($paleta, 6);
 	transition: 0.5s;
 	img {
-		height: 820px;
-		width: 100%;
 		@include tamano(820px, 100%);
 		object-fit: cover;
 	}
