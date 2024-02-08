@@ -22,7 +22,7 @@ $font: 10px, 13.5px, 15px, 17px, 20px, 24px, 26px, 30px, 36px, 42px, 50px, 72px,
 
 .grid-container{
 	display: grid;
-	grid-template-rows: 35px 75px auto 50px  ;
+	grid-template-rows: 35px auto auto 50px  ;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-areas:
 	"header header header header"

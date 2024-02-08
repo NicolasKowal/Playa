@@ -7,7 +7,7 @@
 
 .grid-container {
   display: grid;
-  grid-template-rows: 35px 75px auto 50px;
+  grid-template-rows: 35px auto auto 50px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas: "header header header header" "nav nav nav nav" "main main main main" "footer footer footer footer"; }
 
@@ -681,7 +681,7 @@
   .carusel-box {
     border: 2px solid white; }
   .novedades {
-    height: 5400px; }
+    height: 2200px; }
     .novedades h2 {
       height: 100px;
       font-size: 42px; }
@@ -689,16 +689,18 @@
       height: 100px;
       font-size: 24px; }
   .novedades-container {
-    height: 2500px;
-    grid-template-columns: 1fr;
-    grid-auto-rows: 300px;
+    height: 1900px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 250px;
     gap: 30px; }
   .novedades-item a {
-    height: 300px; }
-    .novedades-item a div h4 {
-      font-size: 20px; }
-    .novedades-item a div p {
-      font-size: 17px; }
+    height: 250px; }
+    .novedades-item a div {
+      height: 100%; }
+      .novedades-item a div h4 {
+        font-size: 20px; }
+      .novedades-item a div p {
+        font-size: 17px; }
     .novedades-item a img {
       aspect-ratio: 1/1;
       height: 230px;
@@ -735,7 +737,7 @@
       height: 40px;
       width: 40px; } }
 
-@media (max-width: 600px) {
+@media (max-width: 615px) {
   .mid-nav img {
     height: 50px; }
   .carusel {
@@ -758,19 +760,17 @@
       font-size: 17px; }
   .novedades-container {
     grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: 200px;
-    gap: 40px; }
-  .imagen-fija h2 {
-    height: 100px;
-    font-size: 42px;
-    letter-spacing: 10px;
-    text-transform: uppercase; }
-  .imagen-fija p {
-    height: 300px;
-    width: 70%;
-    margin: 0 auto;
-    text-align: justify;
-    font-size: 17px; }
+    grid-auto-rows: 220px;
+    gap: 20px; }
+  .novedades-item a {
+    height: 220px; }
+    .novedades-item a div h4 {
+      font-size: 17px; }
+    .novedades-item a div p {
+      font-size: 15px; }
+    .novedades-item a img {
+      height: 190px;
+      width: 40%; }
   .imagen-fija h2 {
     height: 100px;
     font-size: 42px; }
@@ -781,6 +781,101 @@
   .grilla {
     height: 3600px;
     width: 90%; }
+  .grilla {
+    height: 3400px;
+    gap: 20px; }
+  .grilla-element {
+    height: 350px;
+    width: 400px; }
+    .grilla-element div {
+      height: 80%;
+      width: 100%; }
+      .grilla-element div p {
+        font-size: 17px; }
+      .grilla-element div ul {
+        font-size: 15px; }
+  .seccion-historia h2 {
+    font-size: 36px; }
+  .seccion-historia h3 {
+    font-size: 26px; }
+  .seccion-historia p {
+    font-size: 17px; }
+  .seccion-historia ul li {
+    font-size: 17px; }
+  .pie div {
+    font-size: 17px; }
+  .whatsapp {
+    bottom: 5px;
+    transform: translate(-50%, -50%); }
+    .whatsapp img {
+      height: 40px;
+      width: 40px; } }
+
+@media (max-width: 500px) {
+  .mid-nav img {
+    height: 50px; }
+  .carusel {
+    height: 450px;
+    width: 100%; }
+    .carusel img {
+      height: 450px;
+      width: 100%; }
+  .carousel-caption {
+    top: 30%; }
+    .carousel-caption h2 {
+      font-size: 20px; }
+  .novedades {
+    height: 1700px; }
+    .novedades h2 {
+      height: 80px;
+      font-size: 42px; }
+    .novedades h3 {
+      height: 80px;
+      font-size: 17px; }
+  .novedades-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 220px;
+    gap: 20px; }
+  .novedades-item a {
+    height: 220px; }
+    .novedades-item a div h4 {
+      font-size: 17px; }
+    .novedades-item a div p {
+      font-size: 15px; }
+    .novedades-item a img {
+      height: 190px;
+      width: 40%; }
+  .imagen-fija h2 {
+    height: 100px;
+    font-size: 42px; }
+  .imagen-fija p {
+    height: 600px;
+    width: 80%;
+    font-size: 15px; }
+  .grilla {
+    height: 3600px;
+    width: 90%; }
+  .grilla {
+    height: 3400px;
+    gap: 20px; }
+  .grilla-element {
+    height: 350px;
+    width: 400px; }
+    .grilla-element div {
+      height: 80%;
+      width: 100%; }
+      .grilla-element div p {
+        font-size: 17px; }
+      .grilla-element div ul {
+        font-size: 15px; }
+  .seccion-historia h2 {
+    font-size: 36px; }
+  .seccion-historia h3 {
+    font-size: 26px; }
+  .seccion-historia p {
+    font-size: 17px; }
+  .seccion-historia ul li {
+    font-size: 17px; }
   .pie div {
     font-size: 17px; }
   .whatsapp {
