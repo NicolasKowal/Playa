@@ -760,10 +760,10 @@
 			height: 250px;
 			div {
 				h4 {
-					font-size: nth($font, 4);
+					font-size: nth($font, 3);
 				}
 				p {
-					font-size: nth($font, 3);
+					font-size: nth($font, 2);
 				}
 			}
 			img {
@@ -786,7 +786,7 @@
 	}
 	.grilla {
 		height: 3400px;
-		gap: 10px;
+		gap: 5px;
 	}
 	.grilla-element {
 		@include tamano(300px, 310px);

@@ -941,9 +941,9 @@
   .novedades-item a {
     height: 250px; }
     .novedades-item a div h4 {
-      font-size: 17px; }
-    .novedades-item a div p {
       font-size: 15px; }
+    .novedades-item a div p {
+      font-size: 13.5px; }
     .novedades-item a img {
       height: 190px;
       width: 40%; }
@@ -959,7 +959,7 @@
     width: 90%; }
   .grilla {
     height: 3400px;
-    gap: 10px; }
+    gap: 5px; }
   .grilla-element {
     height: 300px;
     width: 310px; }
