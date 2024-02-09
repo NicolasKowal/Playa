@@ -2,6 +2,11 @@
 	grid-area: main;
 }
 
+.carousel-control-prev, .carousel-control-next{
+	top: 135px;
+	height: 800px;
+}
+
 .carusel {
 	@include tamano(820px, 100%);
 	background: nth($paleta, 6);
@@ -54,6 +59,12 @@
 	gap: 50px;
 }
 
+.novedades-container .novedades-item:first-child {
+	display: none;
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
 .novedades-item {
 	background: nth($paleta, 5);
 	@include tamano(100%, 100%);
