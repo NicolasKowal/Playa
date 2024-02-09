@@ -131,7 +131,7 @@
 
 .carousel-caption {
   top: 30%; }
-  .carousel-caption h2 {
+  .carousel-caption h1 {
     text-transform: uppercase;
     font-size: 140px;
     text-shadow: 1px 1px 2px black; }
@@ -444,7 +444,7 @@
     .carusel img {
       height: 800px;
       width: 100%; }
-  .carousel-caption h2 {
+  .carousel-caption h1 {
     font-size: 72px; }
   .novedades {
     height: 750px; }
@@ -523,7 +523,7 @@
     .carusel img {
       height: 750px;
       width: 100%; }
-  .carousel-caption h2 {
+  .carousel-caption h1 {
     font-size: 72px; }
   .novedades {
     height: 1100px; }
@@ -748,7 +748,7 @@
       width: 100%; }
   .carousel-caption {
     top: 30%; }
-    .carousel-caption h2 {
+    .carousel-caption h1 {
       font-size: 20px; }
   .novedades {
     height: 1700px; }
