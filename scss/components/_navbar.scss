@@ -1,4 +1,12 @@
+@keyframes tamaño {
+    to{
+        height: calc(var(--var) - 25px );
+    }
+}
+
 .navegador {
+    animation: tamaño auto linear forwards;
+    animation-timeline: scroll(root block);
     grid-area: nav;
     @include tamano(100%, 100%);
     position: sticky;
